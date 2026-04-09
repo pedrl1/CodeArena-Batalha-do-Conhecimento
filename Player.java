@@ -11,4 +11,6 @@ public class Player {
         this.life = life;
         this.points = points;
     }
+    
+    Player player = new Player("", 0, 0);
 }
