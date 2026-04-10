@@ -7,6 +7,10 @@ public class Main {
         //its the main loop condition to exist
         while (roomManager.roomIndex > 0){
             switch(roomManager.roomIndex){
+                case 1:
+                    System.out.println("CODEARENA: BATALHA DO CONHECIMENTO");
+                    System.out.println("Deseja começar o jogo? (y/n)");
+                    
 
             }
         }
