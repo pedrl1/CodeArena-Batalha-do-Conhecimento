@@ -22,6 +22,11 @@ public class RoomManager {
         roomIndex = 1;
     }
 
+    //same thing as the last one
+    public static void exitGame(int roomIndex){
+        roomIndex = 0;
+    }
+
 
 
 }
