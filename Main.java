@@ -10,7 +10,7 @@ public class Main {
 
         while (room.roomIndex > 0){
             switch(room.roomIndex){
-                /*room 1 = main title
+                /*room 1 = main menu
                 room 2 = credits
                 room 0 = leave game */
                 case 1:

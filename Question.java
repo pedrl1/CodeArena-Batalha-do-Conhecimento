@@ -8,5 +8,7 @@ public class Question {
         this.text = text;
         this.alt = alt;
         this.difficulty = difficulty;
-    }
+    }   
+
+    
 }
