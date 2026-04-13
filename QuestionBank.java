@@ -1,3 +1,36 @@
 public class QuestionBank {
-    Question question = new Question();
+    Question[] question = {
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+        new Question(null, null, 0),
+    };
+
+
 }
