@@ -20,11 +20,4 @@ public class Question {
     public String[] getAlternatives() {
         return alternatives;
     }
-
-    public boolean isCorrect(int altIndex) {
-        return altIndex == correctAltIndex;
-    }
-
-    
-
 }
