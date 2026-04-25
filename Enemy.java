@@ -1,25 +1,33 @@
-public class Enemy {
+public class Enemy extends Character {
 
-    //10 different enemy encounters 
-    //each character with 3 questions each (3 hits to kill that mf -> that comany game that i should not mention)
-    Character[] enemy = {
-
-        
-        new Character(null, 150, null, 100), // very easy normal enemy
-        new Character(null, 200, null, 200), // very easy boss
-
-        new Character(null, 250, null, 220), // easy normal enemy
-        new Character(null, 300, null, 300), // easy boss
-
-        new Character(null, 350, null, 330), // medium enemy
-        new Character(null, 400, null, 400), // medium boss
-
-        new Character(null, 500, null, 440), // hard enemy
-        new Character(null, 1000, null, 500), // hard boss
-        
-        new Character(null, 1500, null, 550), // very hard enemy
-        new Character(null, 2000, null, 600), // very hard boss
+    public Enemy(String name, int maxHealth, int attack, int defense) {
+        super(name, maxHealth, attack, defense);
     }
 
+    Character[] enemy = {
+        
+        new Enemy(null, 150, null, null), // very easy normal enemy
+        new Enemy(null, 200, null, null), // very easy boss
+
+        new Enemy(null, 250, null, null), // easy normal enemy 
+        new Enemy(null, 300, null, null), // easy boss
+
+        new Enemy(null, 350, null, null), // medium normal enemy
+        new Enemy(null, 400, null, null), // medium boss
+
+        new Enemy(null, 500, null, null), // hard normal enemy
+        new Enemy(null, 1000, null, null), // hard boss
+
+        new Enemy(null, 1500, null, null), // very hard normal enemy
+        new Enemy(null, 2000, null, null) // very hard boss
+    };
+
+    Character getEnemy(int index) {
+        if (index >= 0 && index < enemy.length) {
+            return enemy[index];
+        }
+        return null; // Return null if index is out of bounds
+    }
+    
 
 }

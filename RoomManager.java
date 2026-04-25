@@ -1,32 +1,32 @@
 public class RoomManager {
-
-    int roomIndex;
-
-    //constructor of fucking course
-    public RoomManager(int roomIndex){
+    
+    private int roomIndex;
+    
+    public RoomManager(int initialRoom) {
+        this.roomIndex = initialRoom;
+    }
+    
+    public void nextRoom() {
+        this.roomIndex++;
+    }
+    
+    public void previousRoom() {
+        this.roomIndex--;
+    }
+    
+    public void goToRoom(int roomIndex) {
         this.roomIndex = roomIndex;
     }
-
-    //useful for a play button or go to next room
-    public static void nextRoom(int roomIndex){
-        roomIndex++;
-    } 
-
-    //go back (like a pause or walk back)
-    public static void previousRoom(int roomIndex){
-        roomIndex--;
+    
+    public void resetToMainMenu() {
+        this.roomIndex = 1;
     }
-
-    //useful for a main menu goer method (PLEASE WORK CAUSE THIS SEEMS FUCKING STUPID)
-    public static void resetRoomIndex(int roomIndex){
-        roomIndex = 1;
+    
+    public void exitGame() {
+        this.roomIndex = 0;
     }
-
-    //same thing as the last one
-    public static void exitGame(int roomIndex){
-        roomIndex = 0;
+    
+    public int getCurrentRoom() {
+        return roomIndex;
     }
-
-
-
 }
