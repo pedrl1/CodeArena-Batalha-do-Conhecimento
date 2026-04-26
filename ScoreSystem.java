@@ -1,5 +1,5 @@
 public class ScoreSystem {
-    int score;
+    private int score;
 
     public ScoreSystem(int score) {
         this.score = score;

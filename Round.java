@@ -1,6 +1,6 @@
 public class Round {
-    int roundNumber;
-    int roundMaxNumber;
+    private int roundNumber;
+    private int roundMaxNumber;
 
     public Round(int roundNumber, int roundMaxNumber) {
         this.roundNumber = roundNumber;

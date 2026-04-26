@@ -6,6 +6,12 @@ public class Main {
         RoomManager roomManager = new RoomManager(1);
         BattleManager battleManager = new BattleManager();
 
+        while (true){
+            roomManager.nextRoom();
+            battleManager.startBattle();
+        }
+
+
     }
 
 }

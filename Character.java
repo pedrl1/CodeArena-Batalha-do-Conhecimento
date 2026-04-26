@@ -1,10 +1,10 @@
 public abstract class Character {
 
-    String name;
-    int maxHealth;
-    int currentHealth;
-    int attack;
-    int defense;
+    private String name;
+    private int maxHealth;
+    private int currentHealth;
+    private int attack;
+    private int defense;
 
     public Character(String name, int maxHealth, int attack, int defense) {
         this.name = name;
@@ -27,6 +27,10 @@ public abstract class Character {
 
     public int getCurrentHealth() {
         return currentHealth;  
+    }
+
+    public int getMaxHealth() {
+        return maxHealth;
     }
 
 }

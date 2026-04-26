@@ -1,9 +1,9 @@
 public class Question {
 
-    String text;
-    String[] alternatives;
-    int difficulty;
-    int correctAltIndex;
+    private String text;
+    private String[] alternatives;
+    private int difficulty;
+    private int correctAltIndex;
     
 
     public Question(String text, String[] alternatives, int difficulty, int correctAltIndex) {
