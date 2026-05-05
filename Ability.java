@@ -1,9 +1,16 @@
 public class Ability {
-    enum ITEMS{
-        PEN,
-        BOOK,
-        NOTEBOOK,
-        CALCULATOR,
-        LAPTOP
-    };
+
+    int enumIndex;
+    String[] abilities = {"PEN", "BOOK", "NOTEBOOK", "CALCULATOR","LAPTOP"};
+
+    public Ability(int enumIndex, String[] abilities) {
+        this.enumIndex = enumIndex;
+        this.abilities = abilities;
+    }
+
+    public int getEnumIndex() {
+        return enumIndex;
+    }
+
+
 }
