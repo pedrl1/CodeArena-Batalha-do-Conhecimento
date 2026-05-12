@@ -29,8 +29,8 @@ public class Enemy extends Character {
         return null; 
     }
     
-    public static int enemyListSize() {
-        return enemy.length; 
+    public int enemyListSize() {
+        return enemy.length(); 
     }
 
 }
