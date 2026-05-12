@@ -15,8 +15,7 @@ public class Main {
 
         while (battleIndex < 3) {
 
-            
-            BattleManager battleManager = new BattleManager(player, currentEnemy, difficultyLevel);
+            BattleManager battleManager = new BattleManager(player, Enemy.getEnemy(difficultyLevel), difficultyLevel);
             battleManager.startBattle();
             battleIndex++;
         }
