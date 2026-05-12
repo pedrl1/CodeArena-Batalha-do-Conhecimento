@@ -52,4 +52,12 @@ public class QuestionBank {
         }
         return null;
     }
+
+    public void askQuestion() {
+        System.out.println("Question: " + questions[0].getText());
+        String[] alternatives = questions[0].getAlternatives();
+        for (int i = 0; i < alternatives.length; i++) {
+            System.out.println((i + 1) + ". " + alternatives[i]);  
+        }
+    }
 }

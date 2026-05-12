@@ -7,7 +7,10 @@ public class BattleManager {
     public void startBattle() {
 
         if (round.getRoundNumber() == 1) {
-            //the fucking logic goes here, but i dont know how to do it yet, so i will leave it for later
+            //attack phase 
+            question.askQuestion();
+            scoreSystem.updateScore();
+            System.out.println("Your current score is: " + scoreSystem.getScore());
         } 
 
         else if (round.getRoundNumber() == 2) {

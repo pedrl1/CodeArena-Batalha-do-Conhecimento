@@ -1,6 +1,6 @@
 public class Ability {
 
-    int enumIndex;
+    private int enumIndex;
     String[] abilities = {"PEN", "BOOK", "NOTEBOOK", "CALCULATOR","LAPTOP"};
 
     public Ability(int enumIndex, String[] abilities) {
@@ -11,6 +11,13 @@ public class Ability {
     public int getEnumIndex() {
         return enumIndex;
     }
+
+    public String[] getAbilities() {
+        return abilities;
+    }
+
+    
+
 
 
 }
