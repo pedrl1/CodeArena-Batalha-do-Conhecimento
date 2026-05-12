@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class QuestionBank {
 
     private Question[] questions = {
@@ -42,15 +44,26 @@ public class QuestionBank {
         new Question("", new String[]{}, 5, 0)
     };
 
+    private Random random = new Random();
+
     public Question[] getQuestions() {
         return questions;
     }
 
-    public Question getQuestion(int index) {
-        if (index >= 0 && index < questions.length) {
-            return questions[index];
+    public Question getRandomQuestion(int difficulty) {
+        java.util.List<Question> filteredQuestions = new java.util.ArrayList<>();
+        
+        for (Question question : questions) {
+            if (question.getDifficulty() <= difficulty) {
+                filteredQuestions.add(question);
+            }
         }
-        return null;
+        
+        if (filteredQuestions.isEmpty()) {
+            return questions[random.nextInt(questions.length)];
+        }
+        
+        return filteredQuestions.get(random.nextInt(filteredQuestions.size()));
     }
 
     public void askQuestion() {

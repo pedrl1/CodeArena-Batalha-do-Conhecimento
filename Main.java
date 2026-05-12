@@ -1,17 +1,29 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main (String [] args){
         System.out.println("Bem-vindo à Batalha do Conhecimento!");
+        
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite seu nome: ");
+        String playerName = scanner.nextLine();
 
-        Player player = new Player("", 100, 1, 0);
-        RoomManager roomManager = new RoomManager(1);
-        BattleManager battleManager = new BattleManager();
+        Player player = new Player(playerName, 100, 1, 0);
+        
+        int battleIndex = 0;
+        int totalScore = 0;
+        int difficultyLevel = 1;
 
-        while (true){
-            roomManager.nextRoom();
+        while (battleIndex < 3) {
+            Character currentEnemy = createEnemyByDifficulty(difficultyLevel);
+            
+            player.heal(100);
+            
+            BattleManager battleManager = new BattleManager(player, currentEnemy, difficultyLevel);
             battleManager.startBattle();
+            battleIndex++;
         }
-
+        
 
     }
-
 }

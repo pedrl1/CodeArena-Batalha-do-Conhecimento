@@ -2,8 +2,8 @@ public class Player extends Character {
     private int level;
     private int experience;
 
-    public Player(String name, int currentHealth, int level, int experience) {
-        super(name, currentHealth, currentHealth, 0); 
+    public Player(String name, int maxHealth, int level, int experience) {
+        super(name, maxHealth, 100, 50); 
         this.level = level;
         this.experience = experience;
     }
@@ -28,7 +28,4 @@ public class Player extends Character {
     public int getExperience() {
         return experience;
     }
-
-    
-
 }

@@ -4,15 +4,12 @@ public class Question {
     private String[] alternatives;
     private int difficulty;
     private int correctAltIndex;
-    private int altIndex;
-    
 
     public Question(String text, String[] alternatives, int difficulty, int correctAltIndex) {
         this.text = text;
         this.alternatives = alternatives;
         this.difficulty = difficulty;
         this.correctAltIndex = correctAltIndex;
-        this.altIndex = altIndex;
     }
 
     public String getText() {
@@ -29,9 +26,6 @@ public class Question {
     
     public int getCorrectAltIndex() {
         return correctAltIndex;
-    }
-    public int getAltIndex() {
-        return altIndex;
     }
 
     public boolean evaluateAnswer(int altIndex) {

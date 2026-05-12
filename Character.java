@@ -17,6 +17,7 @@ public abstract class Character {
     public String getName() {
         return name;
     }
+    
     public int getAttack() {
         return attack;
     }   
@@ -33,4 +34,21 @@ public abstract class Character {
         return maxHealth;
     }
 
+    public void takeDamage(int damage) {
+        currentHealth -= damage;
+        if (currentHealth < 0) {
+            currentHealth = 0;
+        }
+    }
+    
+    public void heal(int amount) {
+        currentHealth += amount;
+        if (currentHealth > maxHealth) {
+            currentHealth = maxHealth;
+        }
+    }
+
+    public boolean isAlive() {
+        return currentHealth > 0;
+    }
 }

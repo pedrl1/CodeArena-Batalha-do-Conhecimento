@@ -4,11 +4,13 @@ public class AnswerEvaluation extends Question {
         super(text, alternatives, difficulty, correctAltIndex);
     }   
 
-    boolean evaluateAnswer(int altIndex) {
-        if (altIndex == correctAltIndex) {
+    Question question;
+
+    public boolean evaluateAnswer(int altIndex) {
+        if (altIndex == question.getCorrectAltIndex()) {
             return true;
         }
-        return false; // Incorrect answer
+        return false;
     }
 
 

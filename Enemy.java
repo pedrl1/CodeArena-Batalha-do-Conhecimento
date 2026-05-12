@@ -26,8 +26,11 @@ public class Enemy extends Character {
         if (index >= 0 && index < enemy.length) {
             return enemy[index];
         }
-        return null; // Return null if index is out of bounds
+        return null; 
     }
     
+    public static int enemyListSize() {
+        return enemy.length; 
+    }
 
 }

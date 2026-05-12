@@ -1,4 +1,4 @@
-public class Ability {
+public abstract class Ability {
 
     private int enumIndex;
     String[] abilities = {"PEN", "BOOK", "NOTEBOOK", "CALCULATOR","LAPTOP"};
@@ -15,9 +15,4 @@ public class Ability {
     public String[] getAbilities() {
         return abilities;
     }
-
-    
-
-
-
 }
