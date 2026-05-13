@@ -3,12 +3,12 @@ public class BattleManager {
     private Round round;
     private QuestionBank questionBank;
     private ScoreSystem scoreSystem;
-    private Character player;
-    private Character enemy;
+    private Player player;
+    private Enemy enemy;
     private boolean defenseSuccessful;
     private int difficultyMultiplier;
 
-    public BattleManager(Character player, Character enemy, int difficultyLevel) {
+    public BattleManager(Player player, Enemy enemy, int difficultyLevel) {
         this.round = new Round(1, 3);
         this.questionBank = new QuestionBank();
         this.scoreSystem = new ScoreSystem(0);

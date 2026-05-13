@@ -4,7 +4,7 @@ public class AnswerEvaluation extends Question {
         super(text, alternatives, difficulty, correctAltIndex);
     }   
 
-    Question question;
+    private Question question;
 
     public boolean evaluateAnswer(int altIndex) {
         if (altIndex == question.getCorrectAltIndex()) {

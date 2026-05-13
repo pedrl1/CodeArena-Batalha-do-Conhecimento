@@ -13,15 +13,11 @@ public class ScoreSystem {
         score += points;
     }
     
-    public void updateScore(boolean isCorrect) {
-        if (isCorrect) {
+    public void updateScore(AnswerEvaluation answerEvaluation) {
+        if (answerEvaluation.evaluateAnswer(answerEvaluation.getCorrectAltIndex())) {
             addPoints(10); // Add 10 points for a correct answer
         } else {
             addPoints(-5); // Subtract 5 points for an incorrect answer
         }
-    }
-
-    public void attack() {
-        
     }
 }
