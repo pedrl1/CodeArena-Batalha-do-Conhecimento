@@ -20,7 +20,7 @@ public class BattleManager {
 
     public void startBattle() {
         while (player.isAlive() && enemy.isAlive()) {
-            executeBattleRound();
+            battleRound();
             if (!round.isFinalRound()) {
                 round.nextRound();
             } else {
@@ -29,7 +29,7 @@ public class BattleManager {
         }
     }
 
-    private void executeBattleRound() {
+    private void battleRound() {
         System.out.println("\n--- ROUND " + round.getRoundNumber() + " ---");
         
         attackPhase();
